@@ -254,7 +254,7 @@ contract MerkleTreeUtils {
         bytes32 _leaf,
         uint256 _path,
         bytes32[] memory _siblings
-    ) public view returns (bool) {
+    ) public pure returns (bool) {
         bytes32 calculatedRoot = computeInclusionProofRootWithLeaf(
             _leaf,
             _path,
